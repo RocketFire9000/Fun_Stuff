@@ -2,7 +2,7 @@ import turtle
 import math
 from sys import exit
 print("This program will graph the trajectory of a cannon ball given the variables below. Please enter any positive integer. Do know that higher values may not be visible on the simulation.")
-g = 9.8  # m/s^2 (make this also changeable)
+g = 9.8  # m/s^2 (make this also changeable?)
 vo = int(input("vo: What is the original x velocity? (How fast is it going in meters per second?) "))
 theta_deg = int(input("theta: What angle is it being launched in degrees? Max 90. "))
 theta_rad = theta_deg * 0.01745329
@@ -14,8 +14,6 @@ if vo <= 0 or theta_deg <= 0:
 def round_up(n, decimals=0):
     multiplier = 10**decimals
     return math.ceil(n * multiplier) / multiplier  # Not actually written by me, borrowed from an online tutorial.
-
-# Due to an issue with the calculations, this will only work if the cannon is on level ground
 
 
 final_distance = round_up(vo ** 2 * math.sin(2 * theta_rad) / g, 2)
