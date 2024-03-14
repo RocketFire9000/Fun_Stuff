@@ -1,4 +1,5 @@
 import turtle
+from turtle import *
 import math
 from sys import exit
 print("This program will graph the trajectory of a cannon ball given the variables below. Please enter any positive integer. Do know that higher values may not be visible on the simulation.")
@@ -20,4 +21,9 @@ final_distance = round_up(vo ** 2 * math.sin(2 * theta_rad) / g, 2)
 final_height = round((vo ** 2) * (math.sin(theta_rad) ** 2) / (2 * g), 2)
 print("The cannon ball will land", final_distance, "meters away")
 print("The cannon ball reached a height of", final_height, "meters above the ground.")
-
+turtle.forward(100)
+turtle.forward(100)
+turtle.forward(100)
+turtle.forward(100)
+turtle.forward(100)
+turtle.forward(100)
