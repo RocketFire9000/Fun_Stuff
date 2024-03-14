@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6efd5429-e4a3-45ab-96a3-dcf9467de774" name="Changes" comment="">
-      <change beforePath="$USER_HOME$/Desktop/.idea/workspace.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="6efd5429-e4a3-45ab-96a3-dcf9467de774" name="Changes" comment="1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +23,7 @@
         <entry key="$USER_HOME$/Desktop" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/Desktop" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Modifier.py" root0="FORCE_HIGHLIGHTING" />
@@ -54,8 +52,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "new",
-    "last_opened_file_path": "C:/Users/isaiah/Desktop",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/isaiah/OneDrive/Documents/GitHub/Projectile_Motion",
     "run.code.analysis.last.selected.profile": "aDefault",
     "settings.editor.selected.configurable": "configurable.group.build"
   }
@@ -101,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710380374425</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1">
+      <option name="closed" value="true" />
+      <created>1710381396185</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710381396185</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
