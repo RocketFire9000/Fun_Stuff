@@ -16,8 +16,10 @@ def round_up(n, decimals=0):
     return math.ceil(n * multiplier) / multiplier  # Not actually written by me, borrowed from an online tutorial.
 
 
+flight_time = (2 * vo * math.sin(theta_rad)) / g
 final_distance = round_up(vo ** 2 * math.sin(2 * theta_rad) / g, 2)
 final_height = round((vo ** 2) * (math.sin(theta_rad) ** 2) / (2 * g), 2)
 print("The cannon ball will land", final_distance, "meters away")
 print("The cannon ball reached a height of", final_height, "meters above the ground.")
 
+print(round(flight_time, 2))
