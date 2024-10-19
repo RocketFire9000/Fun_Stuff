@@ -2,7 +2,8 @@ import pygame
 import pyttsx3
 import random
 import time
-
+import textwrap
+import keyboard
 
 # Initialize pyttsx3 for text-to-speech
 engine = pyttsx3.init()
@@ -39,11 +40,11 @@ GREEN = (0, 255, 0)
 RED = (255, 0, 0)
 
 # Keys
-KEY_CLEAR_SCREEN = pygame.key.key_code('1')
-KEY_SHOW_NEW_CLUE = pygame.key.key_code('2')
-KEY_SHOW_ANSWER = pygame.key.key_code('3')
-KEY_REPLAY_AUDIO = pygame.key.key_code('4')
-KEY_RESTART_TIMER = pygame.key.key_code('5')
+KEY_CLEAR_SCREEN = pygame.key.key_code('F13')
+KEY_SHOW_NEW_CLUE = pygame.key.key_code('F14')
+KEY_SHOW_ANSWER = pygame.key.key_code('F15')
+KEY_REPLAY_AUDIO = pygame.key.key_code('F16')
+KEY_RESTART_TIMER = pygame.key.key_code('F17')
 
 # Game variables
 current_text = ""
@@ -61,15 +62,14 @@ def get_random_text():
         index = random.randint(0, len(bible_verses) - 1)
         current_reference = references[index].strip()
         is_bible_verse = True
-        print("def get random text if: dis will be a real verse")
         return bible_verses[index].strip()
+        print("def get random text if: dis will be a real verse")
     else:
         # Pick a ChatGPT fake line
         current_reference = ""
         is_bible_verse = False
-        print("def get random text else: dis will be a fake verse")
         return fake_verses[random.randint(0, len(fake_verses) - 1)].strip()
-
+        print("def get random text else: dis will be a fake verse")
 
 def speak_text(text):
     print("def speak_text: about to talk")
@@ -99,8 +99,7 @@ current_text = ""
 print("before game loop 2: current text should be blank")
 timer_running = False
 print("before game loop 3: timer is not running")
-# BillyBob = True
-# keys = ['F13', 'F14', 'F15', 'F16', 'F17']
+
 while running:
     screen.fill(BLUE)
     width, height = screen.get_size()
@@ -116,21 +115,21 @@ while running:
 
     # Display the answer if needed
     if show_answer:
-        print("showing answer")
+        print("game loop if show_answer: showing answer")
         answer_text = "This is a Bible verse." if is_bible_verse else "This is NOT a Bible verse."
         answer_color = GREEN if is_bible_verse else RED
         answer_surface = font.render(answer_text, True, answer_color)
         screen.blit(answer_surface, (20, y_offset))
         y_offset += answer_surface.get_height() + 10
+        print("boio we abo ta wait for 5 sec")
+        time.sleep(1)
+        print("awaken")
         speak_text(answer_text)
 
-
-
-
-    if is_bible_verse:
-        print("game loop if is bible verse: is bible verse")
-        reference_surface = font.render(current_reference, True, GREEN)
-        screen.blit(reference_surface, (20, y_offset))
+        if is_bible_verse:
+            print("game loop if is bible verse: is bible verse")
+            reference_surface = font.render(current_reference, True, GREEN)
+            screen.blit(reference_surface, (20, y_offset))
 
     pygame.display.flip()
     #print("flipped the display, whatever that means")
@@ -163,8 +162,8 @@ while running:
                 timer_running = False
                 print("5 f13 timer is not running")
             elif event.key == KEY_SHOW_NEW_CLUE: # F14
-                print("1 F14 pressed F14 to show new clue")
-                show_answer = True
+                # print("1 F14 pressed F14 to show new clue")
+                # show_n = True
                 print("2 F14 not showing answer")
                 current_text = get_random_text()
                 print("3 F14 text is ",current_text)
@@ -191,6 +190,7 @@ while running:
                 print("2 F17 timer is not start")
                 timer_running = True
                 print("3 F17 timer is now running")
+            # elif event.key == K
 
     clock.tick(30)
 
