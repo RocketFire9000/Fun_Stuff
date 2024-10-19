@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6efd5429-e4a3-45ab-96a3-dcf9467de774" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/ihgyutr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Math Random Generator V.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Math Random Generator V.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Newtons Method.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldSpeak Updater by Not Me.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/P^3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyDraw_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RAND.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Version 1.py" beforeDir="false" />
-    </list>
+    <list default="true" id="6efd5429-e4a3-45ab-96a3-dcf9467de774" name="Changes" comment="1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -222,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714661184997</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="1">
+      <option name="closed" value="true" />
+      <created>1729313054621</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1729313054621</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="UnknownFeatures">
